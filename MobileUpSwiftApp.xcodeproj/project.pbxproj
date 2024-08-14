@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83142D6E2C6C90DF00C7D430 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142D6D2C6C90DF00C7D430 /* LoginView.swift */; };
 		83C7E7A42C6BB7D5009F304E /* MobileUpSwiftAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7E7A32C6BB7D5009F304E /* MobileUpSwiftAppApp.swift */; };
 		83C7E7A62C6BB7D5009F304E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7E7A52C6BB7D5009F304E /* ContentView.swift */; };
 		83C7E7A82C6BB7D5009F304E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C7E7A72C6BB7D5009F304E /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83142D6D2C6C90DF00C7D430 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		83C7E7A02C6BB7D5009F304E /* MobileUpSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C7E7A32C6BB7D5009F304E /* MobileUpSwiftAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileUpSwiftAppApp.swift; sourceTree = "<group>"; };
 		83C7E7A52C6BB7D5009F304E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83142D6A2C6C906D00C7D430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83142D6D2C6C90DF00C7D430 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83142D6B2C6C909C00C7D430 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		83142D6C2C6C90A700C7D430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		83C7E7972C6BB7D4009F304E = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +75,9 @@
 		83C7E7A22C6BB7D5009F304E /* MobileUpSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				83142D6C2C6C90A700C7D430 /* Model */,
+				83142D6B2C6C909C00C7D430 /* ModelView */,
+				83142D6A2C6C906D00C7D430 /* View */,
 				83C7E7A32C6BB7D5009F304E /* MobileUpSwiftAppApp.swift */,
 				83C7E7A52C6BB7D5009F304E /* ContentView.swift */,
 				83C7E7A72C6BB7D5009F304E /* Assets.xcassets */,
@@ -83,6 +110,8 @@
 			dependencies = (
 			);
 			name = MobileUpSwiftApp;
+			packageProductDependencies = (
+			);
 			productName = MobileUpSwiftApp;
 			productReference = 83C7E7A02C6BB7D5009F304E /* MobileUpSwiftApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,8 @@
 				Base,
 			);
 			mainGroup = 83C7E7972C6BB7D4009F304E;
+			packageReferences = (
+			);
 			productRefGroup = 83C7E7A12C6BB7D5009F304E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83142D6E2C6C90DF00C7D430 /* LoginView.swift in Sources */,
 				83C7E7A62C6BB7D5009F304E /* ContentView.swift in Sources */,
 				83C7E7A42C6BB7D5009F304E /* MobileUpSwiftAppApp.swift in Sources */,
 			);
@@ -280,6 +312,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +342,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
