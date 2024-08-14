@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83142D6E2C6C90DF00C7D430 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142D6D2C6C90DF00C7D430 /* LoginView.swift */; };
+		83142D702C6D1F6F00C7D430 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83142D6F2C6D1F6F00C7D430 /* WebView.swift */; };
 		83C7E7A42C6BB7D5009F304E /* MobileUpSwiftAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7E7A32C6BB7D5009F304E /* MobileUpSwiftAppApp.swift */; };
 		83C7E7A62C6BB7D5009F304E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7E7A52C6BB7D5009F304E /* ContentView.swift */; };
 		83C7E7A82C6BB7D5009F304E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C7E7A72C6BB7D5009F304E /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		83142D6D2C6C90DF00C7D430 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		83142D6F2C6D1F6F00C7D430 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		83C7E7A02C6BB7D5009F304E /* MobileUpSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C7E7A32C6BB7D5009F304E /* MobileUpSwiftAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileUpSwiftAppApp.swift; sourceTree = "<group>"; };
 		83C7E7A52C6BB7D5009F304E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		83142D6B2C6C909C00C7D430 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				83142D6F2C6D1F6F00C7D430 /* WebView.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83142D6E2C6C90DF00C7D430 /* LoginView.swift in Sources */,
+				83142D702C6D1F6F00C7D430 /* WebView.swift in Sources */,
 				83C7E7A62C6BB7D5009F304E /* ContentView.swift in Sources */,
 				83C7E7A42C6BB7D5009F304E /* MobileUpSwiftAppApp.swift in Sources */,
 			);
