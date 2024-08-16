@@ -13,6 +13,7 @@
 		83C7E7A62C6BB7D5009F304E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7E7A52C6BB7D5009F304E /* ContentView.swift */; };
 		83C7E7A82C6BB7D5009F304E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C7E7A72C6BB7D5009F304E /* Assets.xcassets */; };
 		83C7E7AB2C6BB7D5009F304E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C7E7AA2C6BB7D5009F304E /* Preview Assets.xcassets */; };
+		83C8538B2C6FDA4100A89DDE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C8538A2C6FDA4100A89DDE /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		83C7E7A52C6BB7D5009F304E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83C7E7A72C6BB7D5009F304E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C7E7AA2C6BB7D5009F304E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83C8538A2C6FDA4100A89DDE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				83142D6F2C6D1F6F00C7D430 /* WebView.swift */,
+				83C8538A2C6FDA4100A89DDE /* LoginViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				83142D6E2C6C90DF00C7D430 /* LoginView.swift in Sources */,
 				83142D702C6D1F6F00C7D430 /* WebView.swift in Sources */,
 				83C7E7A62C6BB7D5009F304E /* ContentView.swift in Sources */,
+				83C8538B2C6FDA4100A89DDE /* LoginViewModel.swift in Sources */,
 				83C7E7A42C6BB7D5009F304E /* MobileUpSwiftAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

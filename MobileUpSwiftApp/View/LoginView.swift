@@ -8,26 +8,37 @@
 import SwiftUI
 
 struct LoginView: View {
+    @ObservedObject var loginViewModel = LoginViewModel()
+    @State private var isShowingLoginSheet = false
+    
     var body: some View {
-        VStack{
-            Spacer()
-            Text("Mobile Up \nGallery")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.system(size: 44, weight: .bold)).padding(.bottom, 10)
-            Spacer()
-            Spacer()
-            Spacer()
-            Button(action: {}){
-                Text("Вход через VK")
-                    .frame(maxWidth: .infinity)
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.black)
-            .buttonBorderShape(.roundedRectangle(radius: 12))
-            .frame(maxWidth: .infinity, alignment: .bottom)
-            .controlSize(.large)
+        if loginViewModel.isLogin {
+            ContentView()
         }
-        .padding(20)
+        else{
+            VStack{
+                Spacer()
+                Text("Mobile Up \nGallery")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.system(size: 44, weight: .bold)).padding(.bottom, 10)
+                Spacer()
+                Spacer()
+                Spacer()
+                Button(action: {isShowingLoginSheet = true}){
+                    Text("Вход через VK")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.black)
+                .buttonBorderShape(.roundedRectangle(radius: 12))
+                .frame(maxWidth: .infinity, alignment: .bottom)
+                .controlSize(.large)
+                .sheet(isPresented: $isShowingLoginSheet, content: {
+                    WebView(token: $loginViewModel.token)
+                })
+            }
+            .padding(20)
+        }
                 
     }
 }
@@ -35,3 +46,4 @@ struct LoginView: View {
 #Preview {
     LoginView()
 }
+
