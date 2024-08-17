@@ -28,9 +28,10 @@ struct LoginView: View {
                 }){
                     Text("Вход через VK")
                         .frame(maxWidth: .infinity)
+                        .foregroundStyle(Color(UIColor.systemBackground))
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(.black)
+                .tint(.primary)
                 .buttonBorderShape(.roundedRectangle(radius: 12))
                 .frame(maxWidth: .infinity, alignment: .bottom)
                 .controlSize(.large)
