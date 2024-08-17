@@ -13,7 +13,6 @@ struct LoginView: View {
     
     var body: some View {
         if loginViewModel.isLogin {
-            ContentView()
         }
         else{
             VStack{
@@ -24,7 +23,9 @@ struct LoginView: View {
                 Spacer()
                 Spacer()
                 Spacer()
-                Button(action: {isShowingLoginSheet = true}){
+                Button(action: {
+                    isShowingLoginSheet = true
+                }){
                     Text("Вход через VK")
                         .frame(maxWidth: .infinity)
                 }

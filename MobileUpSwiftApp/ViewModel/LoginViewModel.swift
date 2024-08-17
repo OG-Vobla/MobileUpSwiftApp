@@ -14,9 +14,9 @@ class LoginViewModel: ObservableObject{
             if token != "" {
                 UserDefaults.standard.setValue(token, forKey: "token")
                 isLogin = true
-                print(token)
             }
             else{
+                UserDefaults.standard.setValue("", forKey: "token")
                 isLogin = false
             }
         }
