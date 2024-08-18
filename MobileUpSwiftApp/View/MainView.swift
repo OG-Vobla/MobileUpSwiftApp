@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var loginViewModel: LoginViewModel
     @State private var selectedTab: Tab = .photo
 
     enum Tab {
@@ -33,7 +34,7 @@ struct MainView: View {
             }
             .navigationBarTitle("MobileUp Gallery", displayMode: .inline)
             .navigationBarItems(trailing: Button("Выход") {
-                
+                loginViewModel.logOut()
             }
             .foregroundStyle(.primary)
             )

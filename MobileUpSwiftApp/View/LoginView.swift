@@ -13,6 +13,8 @@ struct LoginView: View {
     
     var body: some View {
         if loginViewModel.isLogin {
+            MainView()
+                .environmentObject(loginViewModel)
         }
         else{
             VStack{

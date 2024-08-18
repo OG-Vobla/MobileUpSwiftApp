@@ -7,21 +7,39 @@
 
 import Foundation
 
-class LoginViewModel: ObservableObject{
-    @Published var isLogin = false
-    @Published var token = ""{
-        didSet{
-            if token != "" {
-                UserDefaults.standard.setValue(token, forKey: "token")
-                isLogin = true
-            }
-            else{
-                UserDefaults.standard.setValue("", forKey: "token")
-                isLogin = false
-            }
+class LoginViewModel: ObservableObject {
+    private let userDefaults = UserDefaults.standard
+    
+    @Published var isLogin: Bool = false
+    @Published var token: String = "" {
+        didSet {
+            handleTokenChange()
         }
     }
+    
     init() {
-        token = UserDefaults.standard.string(forKey: "token") ?? ""
+        loadToken()
+    }
+    
+    private func loadToken() {
+        token = userDefaults.string(forKey: "token") ?? ""
+    }
+    
+    private func handleTokenChange() {
+        if token.isEmpty {
+            userDefaults.removeObject(forKey: "token")
+            isLogin = false
+        } else {
+            userDefaults.setValue(token, forKey: "token")
+            isLogin = true
+        }
+    }
+    
+    func logOut() {
+        token = ""
+    }
+    
+    func logIn(with newToken: String) {
+        token = newToken
     }
 }
